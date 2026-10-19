@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Web de Prueba</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-glow"></div>
+
+  <header class="navbar">
+    <div class="logo">🚀 Silver Guacamole</div>
+    <nav>
+      <a href="#features">Características</a>
+      <a href="#demo">Demo</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">✨ Página de Prueba</span>
+      <h1>Bienvenido a tu nueva <span class="gradient-text">página web</span></h1>
+      <p class="subtitle">
+        Diseño moderno, limpio y adaptable creado con HTML5, CSS moderno y JavaScript interactivo.
+      </p>
+      <div class="hero-actions">
+        <button id="counter-btn" class="btn btn-primary">
+          ¡Haz clic aquí! (<span id="counter-val">0</span>)
+        </button>
+        <button id="color-btn" class="btn btn-secondary">Cambiar acento</button>
+      </div>
+    </section>
+
+    <section id="features" class="features-grid">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Rápida y Ligera</h3>
+        <p>Sin frameworks pesados ni dependencias externas lentas. Carga instantánea.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Diseño Responsivo</h3>
+        <p>Se adapta perfectamente a pantallas de móviles, tablets y ordenadores de escritorio.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎨</div>
+        <h3>Estilo Moderno</h3>
+        <p>Efectos de desenfoque de cristal (glassmorphism), degradados y animaciones fluidas.</p>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+      <div class="card demo-card">
+        <h3>Prueba interactiva</h3>
+        <p>Escribe algo a continuación para ver cómo reacciona en tiempo real:</p>
+        <input type="text" id="interactive-input" placeholder="Escribe un mensaje aquí..." class="custom-input">
+        <p class="live-preview">Mensaje en directo: <strong id="preview-text">¡Hola mundo!</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Creado para pruebas locales • <span id="current-year"></span></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
